@@ -1,24 +1,93 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <title>Pricing Page</title>
 </head>
 
-<body>
-  <nav class=" h-32 bg-blue-400 flex  items-center text-white px-14 py-6 justify-between">
-    <div class="n-left  text-4xl font-semibold"><h1> logo</h1></div>
-    <div class="links flex gap-6 text-3xl"><a class="no-underline" href="#">Home</a><a href="#"> Products</a><a href="#"> Services</a><a href="#">About</a>
+<body class="bg-gray-100 font-sans">
+  <!-- Navbar -->
+  <nav class="h-20 bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-between text-white px-10 shadow-lg">
+    <div class="text-3xl font-bold">
+      <h1>Logo</h1>
     </div>
-    <div class="n-right flex items-center gap-4  text-2xl "> <button  class="border-2  px-4 py-2 rounded  border-white-500"> Buy Product </button>
-      <button class="border-2  px-4 py-2 rounded  border-white-500"> Register now</button>
-
+    <div class="flex gap-8 text-lg font-medium">
+      <a class="hover:text-yellow-300 transition duration-300" href="#">Home</a>
+      <a class="hover:text-yellow-300 transition duration-300" href="#">Products</a>
+      <a class="hover:text-yellow-300 transition duration-300" href="#">Services</a>
+      <a class="hover:text-yellow-300 transition duration-300" href="#">About</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <button class="border border-white px-4 py-2 rounded hover:bg-white hover:text-blue-500 transition duration-300">
+        Buy Product
+      </button>
+      <button class="border border-white px-4 py-2 rounded hover:bg-white hover:text-blue-500 transition duration-300">
+        Register Now
+      </button>
     </div>
   </nav>
-  <div class="page">
-    
+
+  <!-- Page Content -->
+  <div class="py-16">
+    <h2 class="text-4xl text-orange-500 text-center font-semibold tracking-widest">PRICING</h2>
+    <h1 class="text-6xl text-center mt-4 font-extrabold text-gray-800">Choose Your Best Plan</h1>
+
+    <!-- Pricing Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 mt-12">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg shadow-lg p-8 border border-gray-300">
+        <h2 class="text-2xl font-bold text-gray-800 tracking-wide">STUDENT</h2>
+        <h4 class="text-sm font-medium text-gray-500">Limited Users</h4>
+        <h1 class="text-5xl font-extrabold text-blue-600 mt-4">$100</h1>
+        <h4 class="text-gray-600">Per device / Month</h4>
+        <ul class="mt-6 space-y-3 text-gray-700">
+          <li>✅ Set according to student needs and templates</li>
+          <li>✅ 1GB of storage, 10Mbps speed</li>
+          <li>✅ Shared work layout templates</li>
+          <li>❌ Requires layout template change for new needs</li>
+        </ul>
+        <button class="mt-8 w-full bg-blue-500 text-white text-lg font-bold py-3 rounded hover:bg-blue-600 transition duration-300">
+          SUBSCRIBE
+        </button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg shadow-lg p-8 border border-gray-300">
+        <h2 class="text-2xl font-bold text-gray-800 tracking-wide">PROFESSIONAL</h2>
+        <h4 class="text-sm font-medium text-gray-500">For Small Teams</h4>
+        <h1 class="text-5xl font-extrabold text-green-600 mt-4">$250</h1>
+        <h4 class="text-gray-600">Per device / Month</h4>
+        <ul class="mt-6 space-y-3 text-gray-700">
+          <li>✅ Advanced templates and customization</li>
+          <li>✅ 10GB of storage, 50Mbps speed</li>
+          <li>✅ Priority support</li>
+          <li>❌ Limited to 5 devices</li>
+        </ul>
+        <button class="mt-8 w-full bg-green-500 text-white text-lg font-bold py-3 rounded hover:bg-green-600 transition duration-300">
+          SUBSCRIBE
+        </button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg shadow-lg p-8 border border-gray-300">
+        <h2 class="text-2xl font-bold text-gray-800 tracking-wide">ENTERPRISE</h2>
+        <h4 class="text-sm font-medium text-gray-500">Unlimited Users</h4>
+        <h1 class="text-5xl font-extrabold text-red-600 mt-4">$500</h1>
+        <h4 class="text-gray-600">Per device / Month</h4>
+        <ul class="mt-6 space-y-3 text-gray-700">
+          <li>✅ Full customization and integrations</li>
+          <li>✅ Unlimited storage, 1Gbps speed</li>
+          <li>✅ 24/7 support and analytics</li>
+          <li>✅ Unlimited devices and users</li>
+        </ul>
+        <button class="mt-8 w-full bg-red-500 text-white text-lg font-bold py-3 rounded hover:bg-red-600 transition duration-300">
+          SUBSCRIBE
+        </button>
+      </div>
+    </div>
   </div>
 </body>
 
